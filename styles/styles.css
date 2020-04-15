@@ -5,7 +5,9 @@ body {
   position: relative;
   width: 100%;
   height: 400px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  max-height: 400px;
+  /*  I changed it to max 400px, because some animations changing and jumping on screen */ }
 
 @keyframes rain {
   from {
