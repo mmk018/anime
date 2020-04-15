@@ -6,3 +6,121 @@ body {
   width: 100%;
   height: 400px;
   margin-bottom: 50px; }
+
+@keyframes rain {
+  from {
+    background-position-y: 0px; }
+  to {
+    background-position-y: 400px; } }
+
+.rainy-days {
+  position: relative;
+  background: url(../images/raindrops.jpg);
+  animation: rain 5s infinite linear;
+  background-repeat: repeat; }
+
+@keyframes totoroAnime {
+  from {
+    right: -500px; }
+  to {
+    right: 100%; } }
+
+.totoro {
+  max-height: 400px;
+  position: absolute;
+  animation: totoroAnime 5s infinite linear; }
+
+.retro-platformer {
+  position: relative;
+  background-color: #9b9bff; }
+
+@keyframes bullet {
+  from {
+    right: -100px; }
+  to {
+    right: 100%; } }
+
+.bullet {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: 200px;
+  animation: bullet 5s infinite 4s linear; }
+
+@keyframes mario-run {
+  0% {
+    left: -100px;
+    bottom: 0px; }
+  25% {
+    left: 40%;
+    bottom: 0px; }
+  35% {
+    left: 50%;
+    bottom: 350px; }
+  60% {
+    left: 70%;
+    bottom: 0px; }
+  100% {
+    left: 100%;
+    bottom: 0px; } }
+
+.mario {
+  position: absolute;
+  background: url(../images/mario.png) center center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  animation: mario-run 5s infinite 4s ease-in-out; }
+
+.digital-traffic {
+  position: relative;
+  background: url(../images/isometric.png);
+  background-repeat: repeat; }
+
+.car__ambulance {
+  position: absolute;
+  background: url(../images/ambulance.png) center center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  left: -50px;
+  transform: scaleX(-1) rotate(15deg);
+  animation: top 5s infinite 3.5s linear; }
+
+.car__bus {
+  position: absolute;
+  background: url(../images/bus.png) center center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  animation: top 5s infinite linear; }
+
+.car__lorry {
+  position: absolute;
+  background: url(../images/lorry.png) center center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  left: -300px;
+  animation: top 5s infinite 3s ease; }
+
+.car__tractor {
+  position: absolute;
+  background: url(../images/tractor.png) center center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  left: -300px;
+  animation: top 5s infinite 2s linear; }
+
+.car__truck {
+  position: absolute;
+  background: url(../images/truck.png) center center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  left: -500px;
+  animation: top 5s infinite linear; }
+
+@keyframes top {
+  from {
+    left: 0%; }
+  to {
+    left: 100%; } }
